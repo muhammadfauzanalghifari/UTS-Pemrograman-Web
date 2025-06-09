@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Lomba Fotografi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Pendaftaran Lomba Fotografi</h2>
+        <form action="proses_pendaftaran.php" method="post" enctype="multipart/form-data">
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Nomor HP</label>
+            <input type="text" name="nomor_hp" required>
+
+            <label>Judul Foto</label>
+            <input type="text" name="judul_foto" required>
+
+            <label>Deskripsi Foto</label>
+            <textarea name="deskripsi" rows="4" required></textarea>
+
+            <label>Upload Foto</label>
+            <input type="file" name="foto" accept="image/*" required>
+
+            <input type="submit" value="Daftar Sekarang">
+        </form>
+    </div>
+</body>
+</html>
